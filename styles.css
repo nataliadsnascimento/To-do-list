@@ -80,4 +80,46 @@ li {
   opacity: 0.8;
 }
 
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+}
 
+.task-buttons button {
+  min-width: 80px;
+  height: 32px;
+}
+
+.edit-btn {
+  background-color: #f9cd1c;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-left: 15px;
+}
+
+.edit-btn:hover {
+  opacity: 0.8;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.task-text {
+  flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #888;
+}
