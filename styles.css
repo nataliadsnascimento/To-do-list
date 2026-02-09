@@ -88,11 +88,13 @@ li {
     border-radius: 6px;
     padding: 10px;
     margin-top: 10px;
+    gap: 10px;
 }
 
 .task-buttons button {
   min-width: 80px;
   height: 32px;
+  border-radius: 6px;
 }
 
 .edit-btn {
@@ -116,6 +118,38 @@ li {
 
 .task-text {
   flex: 1;
+  font-size: 15px;
+}
+
+.task-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #15ae2c;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.task-checkbox:checked {
+  background-color: #15ae2c;
+}
+
+.task-checkbox:checked::after {
+  content: "✓";
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 footer {
@@ -123,3 +157,4 @@ footer {
     padding: 15px 0;
     color: #888;
 }
+
