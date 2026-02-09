@@ -29,13 +29,32 @@ input {
     padding: 8px;
 }
 
-button {
+#addBtn {
     padding: 8px 12px;
     cursor: pointer;
     background-color: #15ae2c;
     color:#fff;
     border-radius: 5px;
     border: none;
+}
+
+#addBtn:hover {
+    opacity: 0.8;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 li {
@@ -46,3 +65,19 @@ li {
     text-decoration: line-through;
     color: #888;
 }
+
+.delete-btn {
+    background-color: #e63946;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-left: 15px;
+}
+
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+
